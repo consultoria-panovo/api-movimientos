@@ -29,7 +29,7 @@ app.get("/consumo/pal3", async (req, res) => {
               BUDAT_MKPF,  -- Fecha de contabilización
               MENGE,
               SUM(CASE 
-                  WHEN BWART IN (01, 202) THEN ABS(Cantidad)  -- Movimientos de consumo (201 y 202)
+                  WHEN BWART IN (301, 302) THEN ABS(Cantidad)  -- Movimientos de consumo (301 y 302)
                   ELSE 0 
               END) AS ConsumoTotal, 
               ROW_NUMBER() OVER(PARTITION BY MATNR, LGORT ORDER BY BUDAT_MKPF DESC) as rn
