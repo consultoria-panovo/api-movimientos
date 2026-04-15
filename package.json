@@ -1,5 +1,5 @@
 {
-  "name": "Api-Movimientos",
+  "name": "api-movimientos",
   "version": "1.0.0",
   "description": "API para consultar MovimientosDeInventario en Azure SQL",
   "main": "index.js",
