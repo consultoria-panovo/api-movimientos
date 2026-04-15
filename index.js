@@ -32,5 +32,5 @@ app.get("/MovimientosDeInventario", async (req, res) => {
 });
 
 app.listen(3000, () => {
-  console.log("API Costeo-Panovo MovimientosDeInventario corriendo en puerto 3000");
+  console.log("API MovimientosDeInventario corriendo en puerto 3000");
 });
