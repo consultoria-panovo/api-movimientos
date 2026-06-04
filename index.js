@@ -31,8 +31,8 @@ app.get("/consumo/pal4", async (req, res) => {
           SUM(
               CASE 
                   -- REVISIÓN IMPORTANTE EN ESTA PARTE:
-                  WHEN BWART = 301 THEN ABS(Cantidad)
-                  WHEN BWART = 302 THEN -ABS(Cantidad)
+                  WHEN BWART = 301 THEN ABS(MENGE)
+                  WHEN BWART = 302 THEN -ABS(MENGE)
                   ELSE 0
               END
           ) AS ConsumoUltimos3Meses,
